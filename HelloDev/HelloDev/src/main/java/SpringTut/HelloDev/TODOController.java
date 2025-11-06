@@ -1,4 +1,5 @@
 package SpringTut.HelloDev;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 @RestController
 //Request Mapping
@@ -10,7 +11,7 @@ public class TODOController {
         return "Path Id: " + id;}
     //Request Parameter
     //Single Parameter
-    @GetMapping("")
+    @GetMapping("/id")
     String getID(@RequestParam("id") int id){
         return "User ID = "+id;}
     //Multiple Parameter
@@ -21,6 +22,27 @@ public class TODOController {
     @PostMapping("/create")
     String postUser(String body){
         return body;}
+
+    //IOC DI
+    @Autowired
+    private HelloDevService helloDevService;
+    @GetMapping("/to")
+    String getTodo(){
+        helloDevService.printTodo();
+        return "Todo";
+    }
+    @GetMapping("/name")
+    String showName(){
+        helloDevService.printname();
+        return "Name Returned....";
+    }
+    @GetMapping("/pen")
+    String showPen(){
+        helloDevService.writePen();
+        return "Pen Returned";
+    }
+
+
 }
 
 
