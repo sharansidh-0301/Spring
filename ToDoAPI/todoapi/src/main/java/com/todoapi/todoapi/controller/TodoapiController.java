@@ -1,4 +1,5 @@
-package com.todoapi.todoapi;
+package com.todoapi.todoapi.controller;
+import com.todoapi.todoapi.service.TodoapiService;
 import com.todoapi.todoapi.models.Todo;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

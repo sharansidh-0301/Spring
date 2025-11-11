@@ -1,7 +1,8 @@
-package com.todoapi.todoapi;
+package com.todoapi.todoapi.service;
 
 
 import com.todoapi.todoapi.models.Todo;
+import com.todoapi.todoapi.repository.TodoapiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

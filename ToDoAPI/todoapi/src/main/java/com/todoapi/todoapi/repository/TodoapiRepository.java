@@ -1,4 +1,4 @@
-package com.todoapi.todoapi;
+package com.todoapi.todoapi.repository;
 
 import com.todoapi.todoapi.models.Todo;
 
