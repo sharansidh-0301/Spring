@@ -1,5 +1,6 @@
 package com.todoapi.todoapi.repository;
 
+import com.todoapi.todoapi.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
